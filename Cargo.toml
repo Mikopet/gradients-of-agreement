@@ -1,0 +1,13 @@
+[package]
+name = "gradients-of-agreement"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.66"
+shuttle-serenity = { version = "0.36.0", default-features = false, features = ["serenity-0-12-rustls_backend"] }
+shuttle-runtime = "0.36.0"
+serenity = { version = "0.12", default-features = false, features = ["client", "gateway", "rustls_backend", "model", "collector"] }
+shuttle-secrets = "0.36.0"
+tokio = "1.26.0"
+tracing = "0.1.37"
